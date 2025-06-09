@@ -17,9 +17,20 @@ This is a real-time face recognition system developed using **OpenCV** and the *
 
 ## How It Works
 
-1. **Face Detection**  
-   Uses `Haar Cascade` classifier to detect faces from grayscale images.
+1. Face Detection
+Technique Used: Haar Cascade Classifier
 
-2. **Face Recognition**  
-   Uses `LBPH` algorithm to recognize detected faces based on the training dataset.
+Description: Converts input images to grayscale and uses OpenCV’s pre-trained Haar Cascade model to detect faces. This method identifies features like eyes, nose, and mouth patterns to locate a face in the image.
+
+2. Face Recognition
+Technique Used: Local Binary Patterns Histograms (LBPH)
+
+Description: Recognizes the faces detected in the previous step by comparing them with known faces in the training dataset. LBPH is robust to lighting variations and is effective for real-time face recognition tasks.
+
+3. Training Dataset - File "A"
+Content: Contains labeled images of different individuals. Each label corresponds to a unique person (e.g., "A", "B", etc.).
+
+Usage: These labeled face images are used to train the LBPH recognizer so that it can identify individuals based on the features extracted during training.
+
+
 
