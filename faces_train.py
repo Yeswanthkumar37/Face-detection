@@ -3,8 +3,9 @@ import cv2 as cv
 import numpy as np
 
 people = ['A']
-DIR = r"C:\Users\tyesw\OneDrive\Desktop\coding\New folder\.venv\faces_training"
-haar_cascade_path = r'C:\Users\tyesw\OneDrive\Desktop\coding\New folder\haarcascades.xml'
+DIR = "A"  
+haar_cascade_path = "haarcascades.xml"
+
 
 if not os.path.exists(haar_cascade_path):
     raise FileNotFoundError(f"Haar cascade file not found: {haar_cascade_path}")
